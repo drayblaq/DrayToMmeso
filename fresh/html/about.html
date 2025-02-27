@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Frozen Food - Quality Foods Distribution</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-500 via-white-600 to-gray-600 text-white font-['Inter']">
+    <header class="sticky top-0 backdrop-blur-md bg-gray-900/70 border-b border-gray-800 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-8">
+                    <img src="https://freshfrozenfood.net/wp-content/uploads/2022/11/logo-fresh-frozen-food.png" alt="Fresh Frozen Food Logo" class="w-24">
+                    <nav class="hidden md:block">
+                        <ul class="flex space-x-8">
+                            <li><a href="index.html" class="hover:text-blue-400 transition-colors duration-300">Home</a></li>
+                            <li><a href="../php/reference.php" class="hover:text-blue-400 transition-colors duration-300">Products</a></li>
+                            <li><a href="contact.html" class="hover:text-blue-400 transition-colors duration-300">Contact</a></li>
+                         </ul>
+                    </nav>
+                </div>
+                <button class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="text-center mb-24">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-WHITE-400 to-cyan-300 bg-clip-text">
+                West Africa's Premier Food Distributor
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Delivering quality frozen and fresh products since 2006
+            </p>
+        </section>
+
+        <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+            <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-blue-500 transition-all duration-300">
+                <h3 class="text-2xl font-bold mb-4">Who We Are</h3>
+                <p class="text-gray-300">
+                    Since 2006, Fresh Frozen Food has been a leader in distributing fresh products to West African communities.
+                </p>
+                <img src="../img/groUP.jpg" alt="Our Company" class="w-full h-48 object-cover rounded-lg mt-6">
+            </div>
+
+            <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-blue-500 transition-all duration-300">
+                <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+                <p class="text-gray-300">
+                    We aim to be an internationally recognized company, offering unmatched quality and variety in our products.
+                </p>
+                <img src="../img/CA.jpg" alt="Our Vision" class="w-full h-48 object-cover rounded-lg mt-6">
+            </div>
+
+            <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-blue-500 transition-all duration-300">
+                <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                <p class="text-gray-300">
+                    To be West Africa's preferred partner in the preservation and distribution of fresh products.
+                </p>
+                <img src="https://freshfrozenfood.net/wp-content/uploads/2024/02/04-2.jpg" alt="Our Mission" class="w-full h-48 object-cover rounded-lg mt-6">
+            </div>
+        </section>
+        <section class="bg-gray-800/30 rounded-3xl p-12 backdrop-blur-sm border border-gray-700">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Team</h2>
+            
+            <!-- Using flex container with wrap -->
+            <div class="flex flex-nowrap overflow-x-auto gap-8 pb-4">
+                <!-- Team Member 1 -->
+                <div class="flex-none w-64">
+                    <div class="relative overflow-hidden rounded-xl bg-gray-800/50 p-6 text-center transform transition duration-300 hover:-translate-y-2">
+                        <img src="../img/ABELL.jpg" alt="ABEL OMONLADE" 
+                            class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500">
+                        <h4 class="text-xl font-semibold text-white">ABEL OMONLADE</h4>
+                        <p class="text-blue-400">Site Manager</p>
+                    </div>
+                </div>
+        
+                <!-- Team Member 2 (Duplicate as needed) -->
+                <div class="flex-none w-64">
+                    <div class="relative overflow-hidden rounded-xl bg-gray-800/50 p-6 text-center transform transition duration-300 hover:-translate-y-2">
+                        <img src="../img/abill.jpg" alt="ABEL OMONLADE" 
+                            class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500">
+                        <h4 class="text-xl font-semibold text-white">BELLO Abill</h4>
+                        <p class="text-blue-400">Responsable Informatique</p>
+                    </div>
+                </div>
+
+                <div class="flex-none w-64">
+                    <div class="relative overflow-hidden rounded-xl bg-gray-800/50 p-6 text-center transform transition duration-300 hover:-translate-y-2">
+                        <img src="../img/joa.jpg" alt="ABEL OMONLADE" 
+                            class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500">
+                        <h4 class="text-xl font-semibold text-white">Joanitha AHO</h4>
+                        <p class="text-blue-400">Assistante de Direction</p>
+                    </div>
+                </div>
+                
+                
+                <div class="flex-none w-64">
+                    <div class="relative overflow-hidden rounded-xl bg-gray-800/50 p-6 text-center transform transition duration-300 hover:-translate-y-2">
+                        <img src="../img/jerome.jpg" alt="ABEL OMONLADE" 
+                            class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500">
+                        <h4 class="text-xl font-semibold text-white">Jérôme BOTON</h4>
+                        <p class="text-blue-400">Comptable supérieur</p>
+                    </div>
+                </div>
+
+                
+                <div class="flex-none w-64">
+                    <div class="relative overflow-hidden rounded-xl bg-gray-800/50 p-6 text-center transform transition duration-300 hover:-translate-y-2">
+                        <img src="../img/IGNANCE.jpg" alt="ABEL OMONLADE" 
+                            class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500">
+                        <h4 class="text-xl font-semibold text-white">Ignace HOUESSOU</h4>
+                        <p class="text-blue-400">Responsable Commerciale</p>
+                    </div>
+                </div>
+
+                
+                <div class="flex-none w-64">
+                    <div class="relative overflow-hidden rounded-xl bg-gray-800/50 p-6 text-center transform transition duration-300 hover:-translate-y-2">
+                        <img src="../img/SAmAD.jpg" alt="ABEL OMONLADE" 
+                            class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500">
+                        <h4 class="text-xl font-semibold text-white">Samad MOUSTAPHA</h4>
+                        <p class="text-blue-400">Responsable Ressources Humaines</p>
+                    </div>
+                </div>
+
+                
+                <div class="flex-none w-64">
+                    <div class="relative overflow-hidden rounded-xl bg-gray-800/50 p-6 text-center transform transition duration-300 hover:-translate-y-2">
+                        <img src="../img/renaud.jpg" alt="ABEL OMONLADE" 
+                            class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500">
+                        <h4 class="text-xl font-semibold text-white">
+                            Renaud MEGAN</h4>
+                        <p class="text-blue-400">Responsable Logistique, Technique et Qualité</p>
+                    </div>
+                </div>
+
+                
+                <div class="flex-none w-64">
+                    <div class="relative overflow-hidden rounded-xl bg-gray-800/50 p-6 text-center transform transition duration-300 hover:-translate-y-2">
+                        <img src="../img/daniel.jpg" alt="ABEL OMONLADE" 
+                            class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500">
+                        <h4 class="text-xl font-semibold text-white">Daniel AKOUEIKOU</h4>
+                        <p class="text-blue-400">Responsable Financier</p>
+                    </div>
+                </div>
+
+                
+                <div class="flex-none w-64">
+                    <div class="relative overflow-hidden rounded-xl bg-gray-800/50 p-6 text-center transform transition duration-300 hover:-translate-y-2">
+                        <img src="../img/kou.jpg" alt="ABEL OMONLADE" 
+                            class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500">
+                        <h4 class="text-xl font-semibold text-white">Raoufou KOUSSE
+                        </h4>
+                        <p class="text-blue-400">Auditeur Interne</p>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-1000 border-t border-gray-800 mt-24">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center md:text-left">
+                    <img src="https://freshfrozenfood.net/wp-content/uploads/2022/11/logo-fresh-frozen-food.png" alt="Fresh Frozen Food Logo" class="w-24 mx-auto md:mx-0 mb-4">
+                    <p class="text-gray-900">&copy; 2024 Fresh Frozen Food<br>Importation & Distribution de Produits Alimentaires</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-900 hover:text-blue-400 transition-colors">Home</a></li>
+                        <li><a href="pro.html" class="text-gray-900 hover:text-blue-400 transition-colors">Products</a></li>
+                        <li><a href="contact.html" class="text-gray-900 hover:text-blue-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                    <address class="text-gray-900 not-italic">
+                        Abokicodji – No. 180, Street 4122<br>
+                        Cotonou Benin<br>
+                        Phone: -229 05 80 10 60
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+<script>
+    const container = document.getElementById('teamContainer');
+    let scrollAmount = 0;
+    const cardWidth = 320; // Width of each card + gap
+
+    function slideLeft() {
+        scrollAmount = Math.max(scrollAmount - cardWidth, 0);
+        container.scroll({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    function slideRight() {
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        scrollAmount = Math.min(scrollAmount + cardWidth, maxScroll);
+        container.scroll({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    // Auto-slide every 2 seconds
+    setInterval(() => {
+        if (scrollAmount >= container.scrollWidth - container.clientWidth) {
+            scrollAmount = 0;
+        } else {
+            scrollAmount += cardWidth;
+        }
+        container.scroll({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    }, 2000);
+</script>
+</body>
+</html>

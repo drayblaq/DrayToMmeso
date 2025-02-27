@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Cart Container */
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Side - Cart Items */
+.cart-items {
+    width: 65%;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-details {
+    display: flex;
+}
+
+.item-image {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.details {
+    max-width: 200px;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.item-quantity input {
+    width: 60px;
+    padding: 5px;
+}
+
+.item-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Right Side - Order Summary */
+.order-summary {
+    width: 30%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.summary-details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.promo-section {
+    margin-top: 20px;
+}
+
+.promo-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.apply-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: #555;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background-color: #e65c52;
+}

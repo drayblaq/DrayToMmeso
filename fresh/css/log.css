@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(14, 13, 13);
+}
+
+.auth {
+    position: relative;
+    width: 1100px;
+    height: 550px;
+    background: black;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth::before,
+.auth::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 1100px;
+    height: 550px;
+    background: linear-gradient(0deg, rgb(1, 0, 8), transparent, transparent);
+    transform-origin: bottom right;
+    animation: rotateBackground 6s linear infinite;
+}
+
+.auth::after {
+    background: linear-gradient(0deg, rgb(26, 22, 167), transparent, transparent);
+    animation-delay: 3s;
+}
+
+@keyframes rotateBackground {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.login, .create-account {
+    position: relative;
+    border-radius: 8px;
+    background: rgb(249, 247, 247);
+    z-index: 10;
+    color: rgb(20, 57, 206);
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: .1em;
+    font-size: 1.5em;
+}
+
+.InputBox {
+    position: relative;
+    width: 350px;
+    margin-top: 40px;
+}
+
+.InputBox input {
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: #f5f5f5; /* Light background */
+    border: 1px solid #ccc;
+    outline: none;
+    color: black; /* Ensure text is visible */
+    font-size: 1em;
+    letter-spacing: .05em;
+}
+
+.InputBox span {
+    position: absolute;
+    left: 10px;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: rgb(120, 120, 120);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.InputBox input:valid ~ span,
+.InputBox input:focus ~ span {
+    color: #000;
+    transform: translateY(-30px);
+    font-size: 0.75em;
+}
+
+.InputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(34, 80, 208);
+    border-radius: 4px;
+    transition: .5s;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    background: rgb(42, 6, 142);
+    padding: 11px 25px;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Links a {
+    color: black;
+    font-size: 0.85em;
+    text-decoration: none;
+    font-weight: 600;
+}

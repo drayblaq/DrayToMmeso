@@ -1,0 +1,327 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    
+    background-image: url('https://www.nwfccrab.cn/wp-content/uploads/2023/02/hero-5.jpg'); /* Add your fish image link here */
+    background-size: cover;
+    background-position: center;
+    background-color: #7a93ac; /* Dark blue header */
+    color: white; /* White text for contrast */
+    padding: 20px; /* Padding for header */
+    text-align: center; /* Centered text */
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 10;
+}
+.navbar {
+    background-color: #050a39; /* Bright coral color for the navbar */
+    padding: 15px 20px; /* Increased padding for better appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the nav items */
+}
+
+.nav-list li {
+    margin: 0 20px; /* Equal margin on left and right */
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Font size */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+}
+
+.nav-list a:hover {
+    background-color: #739de5; /* Light coral on hover */
+    color: #003366; /* Dark blue text on hover */
+}
+/* Hero section background */
+.background-fish {
+    background-image: url('fish-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-fish h2 {
+    font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Product page layout */
+.product-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-gallery img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.main-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.product-details {
+    max-width: 500px;
+}
+
+.product-details h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.location {
+    font-size: 16px;
+    color: #777;
+}
+
+.star-rating {
+    color: gold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.star-rating .fa-star {
+    margin-right: 5px;
+}
+
+.price {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+.delivery, label {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.quantity-selection {
+    margin-top: 20px;
+}
+
+.quantity-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-controls button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.quantity-controls button:hover {
+    background-color: #004d40;
+}
+
+.quantity-controls input {
+    width: 50px;
+    text-align: center;
+}
+
+.product-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.sold-out, .notify {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: not-allowed;
+}
+
+/* Ecommerce section */
+.ecommerce-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.related-products {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #4CAF50;
+    margin-top: 5px;
+}
+
+/* Image gallery - making the smaller fish images bigger and within a box */
+.image-box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tabs for product description and reviews */
+.tabcontent {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.tablinks {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+.tablinks:hover {
+    background-color: #45a049;
+}
+
+/* Show active tab */
+.active {
+    display: block;
+}
+
+/* Related products section enhancements */
+.related-products {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.product-item {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+
+.add-to-cart {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #004d40;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.map-section {
+    margin-top: 20px;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}

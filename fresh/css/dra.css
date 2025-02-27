@@ -1,0 +1,242 @@
+/* General Body Settings */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f0f8ff; /* Light background for the body */
+}
+
+/* Header Section with Background Image */
+header {
+    background-image: url('https://www.nwfccrab.cn/wp-content/uploads/2023/01/06-5.jpg'); /* Fish image link */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header h2 {
+    font-size: 2rem;
+    margin: 10px 0 0;
+    font-weight: normal;
+}
+
+/* Logo styling (optional) */
+.logo {
+    position: relative;
+    z-index: 2;
+    width: 100px;
+    height: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #01185d;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation items */
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover and pop-up animation */
+.nav-item:hover {
+    color: #66ccff;
+    transform: translateY(-5px);
+}
+
+/* Search Box Styles */
+.search-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .search-button {
+    padding: 10px;
+    background: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .search-button:hover {
+    background: #005f6b;
+  }
+  
+/* Gallery Section (Product Cards) */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    width: 23%; /* Adjust width for smaller boxes */
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+/* Product Image */
+.content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Product Title */
+.content h5 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Star Rating */
+.content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.content li {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.checked {
+    color: gold; /* Star color for ratings */
+}
+
+/* Buy Now Button */
+button {
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #28a745; /* Green */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.buy {
+    background-color: #ff9900; /* Orange color for buy button */
+}
+
+.buy:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #202731;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Map Section */
+.map-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Footer Section */
+footer {
+    background-color: #004080; /* Dark blue footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 750px) {
+    .content {
+        width: 100%; /* Full width on small screens */
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list li {
+        margin: 10px 0;
+    }
+    .search-input {
+        width: 150px; /* Adjust search input size */
+    }
+}

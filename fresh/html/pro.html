@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog - Fresh Frozen Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white font-['Poppins'] min-h-screen">
+    <header class="relative overflow-hidden py-12 px-4">
+        <div class="absolute inset-0 bg-blue-600 opacity-10 transform -skew-y-6"></div>
+        <div class="container mx-auto relative z-10">
+            <div class="flex flex-col items-center" data-aos="fade-down">
+                <img src="/api/placeholder/128/128" alt="Company Logo" class="w-32 mb-4 rounded-full shadow-lg">
+                <h2 class="text-lg font-medium text-blue-400">STE-Fresh Frozen Food (3F)</h2>
+                <h1 class="text-4xl md:text-5xl font-bold mt-2 bg-gradient-to-r from-blue-400 to-teal-400 text-transparent bg-clip-text">Product Catalog</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sticky top-0 z-50 bg-gray-800/95 backdrop-blur-sm shadow-lg">
+        <div class="container mx-auto p-4">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <ul class="flex space-x-6">
+                    <li>
+                        <a href="index.html" class="text-white hover:text-blue-400 transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-blue-400 after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="text-white hover:text-blue-400 transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-blue-400 after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="text-white hover:text-blue-400 transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-blue-400 after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="flex items-center space-x-2 w-full md:w-auto">
+                    <div class="relative flex-grow md:flex-grow-0">
+                        <input type="text" id="searchInput" placeholder="Search products..." class="w-full md:w-64 pl-10 pr-4 py-2 bg-gray-700 rounded-lg text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300">
+                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-lg text-white transition-all duration-300 flex items-center space-x-2" onclick="filterProducts()">
+                        <span>Search</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto py-12 px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="productCatalog">
+            <div class="group bg-gray-800 rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2" data-name="Bonito" data-aos="fade-up">
+                <div class="relative overflow-hidden">
+                    <img src="../img/Stroma.jpg" alt="Bonito" class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">AVAILABLE</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-center">draY</h3>
+                    <div class="flex justify-center mb-4">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                    <button class="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium py-2 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2" onclick="openModal('Bonito')">
+                        <span>BUY NOW</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="group bg-gray-800 rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2" data-name="Bonito" data-aos="fade-up">
+                <div class="relative overflow-hidden">
+                    <img src="../img/blue whitnin.jpg" alt="Bonito" class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">AVAILABLE</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-center">Bonito</h3>
+                    <div class="flex justify-center mb-4">
+                        <div class="flex space-x-1">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                    </div>
+                    <button class="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium py-2 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2" onclick="openModal('Bonito')">
+                        <span>BUY NOW</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center hidden z-50 transition-opacity duration-300">
+        <div class="bg-gray-800 rounded-2xl p-8 max-w-md w-full mx-4 transform transition-all duration-300 scale-95 opacity-0" id="modalContent">
+            <div class="relative">
+                <button onclick="closeModal()" class="absolute -right-4 -top-4 bg-red-500 hover:bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-300">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h2 id="modalProductName" class="text-2xl font-bold mb-4 text-center bg-gradient-to-r from-blue-400 to-teal-400 text-transparent bg-clip-text"></h2>
+                <img src="/api/placeholder/400/300" alt="Product" class="w-full h-48 object-cover rounded-lg mb-4">
+                <p class="text-gray-300 mb-6 text-center">Are you interested in purchasing this product? Our team will contact you shortly with pricing and availability details.</p>
+                <div class="flex flex-col space-y-3">
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-2 bg-gray-700 rounded-lg text-white outline-none focus:ring-2 focus:ring-blue-500">
+                    <textarea placeholder="Special Requirements (Optional)" class="w-full px-4 py-2 bg-gray-700 rounded-lg text-white outline-none focus:ring-2 focus:ring-blue-500 h-24 resize-none"></textarea>
+                    <div class="flex space-x-4">
+                        <button class="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-2 rounded-lg transition-colors duration-300" onclick="closeModal()">Cancel</button>
+                        <button class="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white py-2 rounded-lg transition-all duration-300 transform hover:scale-105">
+                            Confirm Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-900 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-blue-400">Fresh Frozen Food</h3>
+                    <p class="text-gray-400">Premium quality frozen seafood for your culinary adventures.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Home</a></li>
+                        <li><a href="pro.html" class="hover:text-blue-400 transition-colors">Products</a></li>
+                        <li><a href="about.html" class="hover:text-blue-400 transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <form class="space-y-4">
+                        <div class="relative">
+                            <input type="email" placeholder="Your email address" class="w-full px-4 py-2 bg-gray-800 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Find Us</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.199589785392!2d2.526770010035678!3d6.368211293595332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103cabdcbb9e20c1%3A0x7227e6cf4215e9!2sGroupe%20NSIA!5e0!3m2!1sfr!2scm!4v1666482187752!5m2!1sfr!2scm" class="w-full h-48 rounded-lg" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2024 Fresh Frozen Food. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        function filterProducts() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const products = document.querySelectorAll('#productCatalog > div');
+
+            products.forEach(product => {
+                const productName = product.getAttribute('data-name').toLowerCase();
+                if (productName.includes(searchInput)) {
+                    product.style.display = 'block';
+                    product.setAttribute('data-aos', 'fade-up');
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        function openModal(productName) {
+            const modal = document.getElementById('productModal');
+            const modalContent = document.getElementById('modalContent');
+            document.getElementById('modalProductName').textContent = productName;
+            
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100');
+            }, 50);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('productModal');
+            const modalContent = document.getElementById('modalContent');
+            
+            modalContent.classList.remove('scale-100', 'opacity-100');
+            modalContent.classList.add('scale-95', 'opacity-0');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('focus', () => {
+            searchInput.classList.add('md:w-80');
+        });
+        searchInput.addEventListener('blur', () => {
+            if (searchInput.value === '') {
+                searchInput.classList.remove('md:w-80');
+            }
+        });
+    </script>
+</body>
+</html>

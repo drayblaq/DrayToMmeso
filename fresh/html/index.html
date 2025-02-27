@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Frozen Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body class="bg-gradient-to-br from-blue-500 via-white-600 to-gray-600 text-white font-['Inter']">
+    <!-- Navigation fixe avec fond transparent -->
+    <header class=" w-full z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+          <div class="flex items-center space-x-4">
+            <img src="../img/logo-fresh.png" alt="Company Logo" class="h-14.5 rounded">
+            <h1 class="text-2xl font-bold text-white-700">Fresh Frozen Food</h1>
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a href="index.html" class="text-white-600 hover:text-black-800 font-medium transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-blue-600 after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
+            <strong>Home</strong>
+            </a>
+            <a href="../php/reference.php" class="text-white-600 hover:text-white-800 font-medium transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-blue-600 after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
+                <strong>Products</strong>
+            </a>
+            <a href="about.html" class="text-white-600 hover:text-white-800 font-medium transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-blue-600 after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
+              <strong>About Us</strong>
+            </a>
+            <a href="contact.html" class="text-white-600 hover:text-white-800 font-medium transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-blue-600 after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
+                <strong>Contact Us</strong>
+            </a>
+          </nav>
+        </div>
+      </header>
+
+    <main class="pt-16">
+        <!-- Hero Section avec Swiper -->
+        <section class="relative h-screen">
+            <div class="swiper-container hero-swiper h-full">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70"></div>
+                        <img src="../img/page-title-18.jpg" alt="Fresh Frozen Fish" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex flex-col items-start justify-center px-10 md:px-20">
+                            <h2 class="text-5xl md:text-6xl font-bold text-white mb-6" data-aos="fade-right">
+                                Premium<br/>
+                                <span class="text-blue-400">Frozen Fish</span>
+                            </h2>
+                            <p class="text-xl md:text-2xl mb-8 max-w-lg" data-aos="fade-right" data-aos-delay="200">
+                                Discover our selection of high-quality frozen seafood, carefully sourced for your culinary delight.
+                            </p>
+                            <a href="../php/reference.php" class="group relative inline-flex items-center px-8 py-3 overflow-hidden bg-blue-500 rounded-full hover:bg-blue-600 transition-colors" data-aos="fade-up" data-aos-delay="400">
+                                <span class="relative text-white text-lg">Discover Our Products</span>
+                                <svg class="w-6 h-6 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Ajoutez d'autres slides similaires ici -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        
+        <section class="py-20 relative overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Our Premium Selection</h2>
+                    <p class="text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                        Discover our carefully curated selection of premium frozen seafood, sourced from the world's finest suppliers.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-gray-800 to-gray-900 p-6 transition-transform hover:-translate-y-2 duration-300" data-aos="fade-up">
+                        <div class="relative mb-6 overflow-hidden rounded-xl">
+                            <img src="https://th.bing.com/th/id/OIP.t7yHE4Exr0m9o5MGmCNfmwHaE8?rs=1&pid=ImgDetMain" alt="John Dory" class="w-full transform transition-transform group-hover:scale-110 duration-300">
+                            <div class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm">
+                                Premium
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">horse mackerel</h3>
+                        <p class="text-gray-300 mb-4">Premium quality horse mackerel, perfect for sophisticated dishes.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-blue-400">23,000</span>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full transition-colors">
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-b from-gray-800 to-gray-900 p-6 transition-transform hover:-translate-y-2 duration-300" data-aos="fade-up">
+                        <div class="relative mb-6 overflow-hidden rounded-xl">
+                            <img src="https://th.bing.com/th/id/R.51757059cbeee3ea822946607dee695d?rik=vJD3B18NHq9vSw&riu=http%3a%2f%2fwww.yahya-peche.com%2ffiles%2fchinchard_989cfa947bef873187974f7baa63be54.jpeg&ehk=W5NbY6nse%2fL%2bfvwHwLVFQUVoVtDz0%2fqlr%2flqiCju7Oc%3d&risl=&pid=ImgRaw&r=0" alt="John Dory" class="w-full transform transition-transform group-hover:scale-110 duration-300">
+                            <div class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm">
+                                Premium
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">jack mackerel</h3>
+                        <p class="text-gray-300 mb-4">Premium quality jack mackerel, perfect for sophisticated dishes.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-blue-400">24,600</span>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full transition-colors">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="../php/reference.php" class="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-3 rounded-full hover:from-blue-600 hover:to-blue-800 transition-all transform hover:scale-105">
+                        <span>View All Products</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-1000 border-t border-gray-800 mt-24">
+        <div class="container mx-auto px-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <img src="https://freshfrozenfood.net/wp-content/uploads/2022/11/logo-fresh-frozen-food.png" alt="Fresh Frozen Food Logo" class="w-24 mx-auto md:mx-0 mb-4">
+                    <h3 class="text-xl font-bold mb-4 text-blue-00">Fresh Frozen Food</h3>
+                    <p class="text-gray-900">Premium quality frozen seafood for your culinary adventures.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-900">
+                        <li><a href="#" class="hover:text-blue-200 transition-colors">Home</a></li>
+                        <li><a href="../php/reference.php" class="hover:text-blue-200 transition-colors">Products</a></li>
+                        <li><a href="about.html" class="hover:text-blue-200 transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-200 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <form class="space-y-4">
+                        <div class="relative">
+                            <input type="email" placeholder="Your email address" class="w-full px-4 py-2 bg-gray-800 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Find Us</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.199589785392!2d2.526770010035678!3d6.368211293595332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103cabdcbb9e20c1%3A0x7227e6cf4215e9!2sGroupe%20NSIA!5e0!3m2!1sfr!2scm!4v1666482187752!5m2!1sfr!2scm" class="w-full h-48 rounded-lg" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-900">
+                <p>© 2024 Fresh Frozen Food. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialisation de AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navigation sticky avec fond au scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-gray-900/95', 'backdrop-blur-sm', 'shadow-lg');
+            } else {
+                navbar.classList.remove('bg-gray-900/95', 'backdrop-blur-sm', 'shadow-lg');
+            }
+        });
+
+        // Initialisation du Swiper
+        const swiper = new Swiper('.hero-swiper', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            }
+        });
+    </script>
+</body>
+</html>

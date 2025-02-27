@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.example.com/background-image.jpg'); /* Add your new background image link */
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Add transparency for a sleek overlay */
+    background-size: cover;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.navbar {
+    background-color: rgba(5, 10, 57, 0.9); /* Transparent navbar */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #739de5;
+    color: #003366;
+}
+
+/* About Us Section */
+.about-us-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 60px 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 700px;
+    text-align: left;
+}
+
+.about-text img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Team Section */
+.team-section {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker section for contrast */
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.member img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.member h4 {
+    margin-top: 15px;
+    color: #fff;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2B3878;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #739de5;
+    text-decoration: none;
+}

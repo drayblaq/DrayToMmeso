@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech2etc Ecommerce Tutorial</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+
+        <link rel="stylesheet" href="../css/sty.css">
+
+
+        <script src="proo.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <img src="https://freshfrozenfood.net/wp-content/uploads/2022/11/logo-fresh-frozen-food.png" alt="Company Logo" class="logo">
+            <h1><strong>Fresh Frozen Food (3F)</strong></h1>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#"><strong>Home</strong></a></li>
+                    <li><a href="pro.html"><strong>Products</strong> &#9662;</a></li>
+                    <li><a href="about.html"><strong>About Us</strong> &#9662;</a></li>
+                    <li><a href="contact.html"><strong>Contact Us</strong> &#9662;</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="header">
+        </section>
+
+        <section id="hero">
+        </section>
+
+        
+        <section id="product1" class="section-p1">
+            <h2>product catalog</h2>
+            <p>fish online sales</p>
+
+            <div id="search-bar">
+                <input type="text" id="search-input" placeholder="Search for fish..." onkeyup="filterProducts()">
+                <button onclick="filterProducts()">Search</button>
+            </div>
+
+            <div class="pro-container">
+            <div class="pro">
+                <img src="blackbelly.jpg" alt="">
+                <div class="des">
+                    <span>blackbelly</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <!-- Add Dropdown for Size -->
+                    <label for="size">Size:</label>
+                    <select id="size-blackbelly" class="size-dropdown" onchange="updatePrice('blackbelly')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <!-- Dynamic Price Display -->
+                    <h3 id="price-blackbelly">23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('blackbelly', document.getElementById('size-blackbelly').value, '23000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="https://th.bing.com/th/id/R.05684eefa78afa0dbeea2e034fd21465?rik=ElJf6BNCs8TEyQ&riu=http%3a%2f%2faruna.paperpillar.com%2fwp-content%2fuploads%2f2020%2f12%2fcakalang.jpg&ehk=RMMRQbqdsqbPv15mjz6un38g6lh2%2fHE9tfviDlXJkLc%3d&risl=&pid=ImgRaw&r=0" alt="">
+                <div class="des">
+                    <span>Bonito</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-Bonito" class="size-dropdown" onchange="updatePrice('Bonito')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3 id="price-Bonito">5000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('Bonito', document.getElementById('size-Bonito').value, '5000')"></a>
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="Tilapia.jpg" alt="">
+                <div class="des">
+                    <span>Tilapia</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-Tilapia" class="size-dropdown" onchange="updatePrice('Tilapia')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3 id="price-Tilapia">23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('Tilapia', document.getElementById('size-Tilapia').value, '23 000')"></a>
+                <i class="fal fa-shopping-cart cart"></i>
+            </a>
+            </div>
+            <div class="pro">
+                <img src="Sardine.jpg" alt="">
+                <div class="des">
+                    <span>Sardine</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-Sardine" class="size-dropdown" onchange="updatePrice('Sardine')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3 id="price-Sardine">14 600cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('Sardine', document.getElementById('size-Sardine').value, '14 600')"></a>
+                <i class="fal fa-shopping-cart cart"></i>
+            </div>
+            <div class="pro">
+                <img src="barracuda.jpg" alt="">
+                <div class="des">
+                    <span>Barracuda</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-barracuda" class="size-dropdown" onchange="updatePrice('barracuda')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3 id="price-barracuda">23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('barracuda', document.getElementById('size-barracuda').value, '23 000')"></a>
+                <i class="fal fa-shopping-cart cart"></i>
+            </div>
+            <div class="pro">
+                <img src="blue whitnin.JPG" alt="">
+                <div class="des">
+                    <span>Blue whitning</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-Blue whitning" class="size-dropdown" onchange="updatePrice('Blue whitning')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3 id="price-Blue whitning">23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('Blue whitning', document.getElementById('size-Blue whitning').value, '23 000')"></a>
+                <i class="fal fa-shopping-cart cart"></i>
+            </div>
+            <div class="pro">
+                <img src="john-dory-saint-pierre.jpg" alt="">
+                <div class="des">
+                    <span>john-dory-saint-pierre</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-john-dory-saint-pierre" class="size-dropdown" onchange="updatePrice('john-dory-saint-pierre')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('john-dory-saint-pierre', document.getElementById('size-john-dory-saint-pierre').value, '23 000')"></a>
+                <i class="fal fa-shopping-cart cart"></i>
+            </div><div class="pro">
+                <img src="sabre-cutlass-ribbonfish.jpg" alt="">
+                <div class="des">
+                    <span>Sabre – cutlass – ribbonfish</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-sabre-cutlass-ribbonfish" class="size-dropdown" onchange="updatePrice('sabre-cutlass-ribbonfish')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('sabre-cutlass-ribbonfish', document.getElementById('size-sabre-cutlass-ribbonfish').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="https://freshfrozenfood.net/wp-content/uploads/2024/05/tub-gurnard-grondin-perlon-270x271.jpg" alt="">
+                <div class="des">
+                    <span>Tub Gurnard</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-tub-gurnard" class="size-dropdown" onchange="updatePrice('tub-gurnard')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('tub-gurnard', document.getElementById('size-tub-gurnard').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="mullet.jpg" alt="">
+                <div class="des">
+                    <span>mullet</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-mullet" class="size-dropdown" onchange="updatePrice('mullet')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('mullet', document.getElementById('size-mullet').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="sea-catfish.jpg" alt="">
+                <div class="des">
+                    <span>Sea catfish</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-sea-catfish" class="size-dropdown" onchange="updatePrice('sea-catfish')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('sea-catfish', document.getElementById('size-sea-catfish').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="yellow-croaker.jpg" alt="">
+                <div class="des">
+                    <span>Faux barre – Corniva – yellow croacker</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-yellow-croaker" class="size-dropdown" onchange="updatePrice('yellow-croaker')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('yellow-croaker', document.getElementById('size-yellow-croaker').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="pescadilla.jpg" alt="">
+                <div class="des">
+                    <span>Pescallida-bar</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-pescadilla" class="size-dropdown" onchange="updatePrice('pescadilla')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('pescadilla', document.getElementById('size-pescadilla').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="Stroma.jpg" alt="">
+                <div class="des">
+                    <span>stroma</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-stroma" class="size-dropdown" onchange="updatePrice('stroma')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('stroma', document.getElementById('size-stroma').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="Sea-Bream.jpg" alt="">
+                <div class="des">
+                    <span>Sea-Bream</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-sea-bream" class="size-dropdown" onchange="updatePrice('sea-bream')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('sea-bream', document.getElementById('size-sea-bream').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="sardinelle-eba.jpg" alt="">
+                <div class="des">
+                    <span>Sardinelle Eba</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-sardinelle-eba" class="size-dropdown" onchange="updatePrice('sardinelle-eba')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('sardinelle-eba', document.getElementById('size-sardinelle-eba').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="Sardinella-aurita.jpg" alt="">
+                <div class="des">
+                    <span>Sardinella Aurita</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-sardinella-aurita" class="size-dropdown" onchange="updatePrice('sardinella-aurita')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('sardinella-aurita', document.getElementById('size-sardinella-aurita').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="Mackerel.jpg" alt="">
+                <div class="des">
+                    <span>Mackerel (Maquereau)</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-mackerel" class="size-dropdown" onchange="updatePrice('mackerel')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('mackerel', document.getElementById('size-mackerel').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="Lichia.jpg" alt="">
+                <div class="des">
+                    <span>Lichia</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-lichia" class="size-dropdown" onchange="updatePrice('lichia')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('lichia', document.getElementById('size-lichia').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="https://freshfrozenfood.net/wp-content/uploads/2022/11/Horse-mackerel-270x271.jpg" alt="">
+                <div class="des">
+                    <span>Horse Mackerel (Chinchard)</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-horse-mackerel" class="size-dropdown" onchange="updatePrice('horse-mackerel')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('horse-mackerel', document.getElementById('size-horse-mackerel').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="Gunter.jpg" alt="">
+                <div class="des">
+                    <span>Grunter</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-grunter" class="size-dropdown" onchange="updatePrice('grunter')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('grunter', document.getElementById('size-grunter').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="https://freshfrozenfood.net/wp-content/uploads/2022/12/Atlantic-Bumper-270x271.jpg" alt="">
+                <div class="des">
+                    <span>Atlantic Bumper</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-atlantic-bumper" class="size-dropdown" onchange="updatePrice('atlantic-bumper')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('atlantic-bumper', document.getElementById('size-atlantic-bumper').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            
+            <div class="pro">
+                <img src="https://freshfrozenfood.net/wp-content/uploads/2019/01/Dentex-270x271.jpg" alt="">
+                <div class="des">
+                    <span>Brama</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <label for="size">Size:</label>
+                    <select id="size-brama" class="size-dropdown" onchange="updatePrice('brama')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('brama', document.getElementById('size-brama').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="https://freshfrozenfood.net/wp-content/uploads/2022/12/Atlantic-Bumper-270x271.jpg" alt="">
+                <div class="des">
+                    <span>Atlantic Bumper</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                     <label for="size">Size:</label>
+                    <select id="size-Atlantic Bumper" class="size-dropdown" onchange="updatePrice('Atlantic Bumper')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('brama', document.getElementById('size-Atlantic Bumper').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+
+            <div class="pro">
+                <img src="https://fishsources.com/wp-content/uploads/2021/01/m-3-6.png" alt="">
+                <div class="des">
+                    <span>Atlantic Bumper</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                     <label for="size">Size:</label>
+                    <select id="size-Atlantic Bumper" class="size-dropdown" onchange="updatePrice('Atlantic Bumper')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('brama', document.getElementById('size-Atlantic Bumper').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+
+            <div class="pro">
+                <img src="https://th.bing.com/th/id/R.05684eefa78afa0dbeea2e034fd21465?rik=ElJf6BNCs8TEyQ&riu=http%3a%2f%2faruna.paperpillar.com%2fwp-content%2fuploads%2f2020%2f12%2fcakalang.jpg&ehk=RMMRQbqdsqbPv15mjz6un38g6lh2%2fHE9tfviDlXJkLc%3d&risl=&pid=ImgRaw&r=0" alt="">
+                <div class="des">
+                    <span>Atlantic Bumper</span>
+                    <h4>fishes</h4>
+                    <div class="Star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                     <label for="size">Size:</label>
+                    <select id="size-Atlantic Bumper" class="size-dropdown" onchange="updatePrice('Atlantic Bumper')">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <h3>23 000cfa</h3>
+                </div>
+                <a href="cart.html" onclick="addToCart('brama', document.getElementById('size-Atlantic Bumper').value, '23 000')">
+                    <i class="fal fa-shopping-cart cart"></i>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <button id="checkoutButton">Checkout</button>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

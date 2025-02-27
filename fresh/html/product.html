@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="add_cart.js" defer></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white py-4">
+        <h1 class="text-center text-3xl font-bold">Product Catalog</h1>
+    </header>
+    <main class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Exemple d'un produit -->
+        <section class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img class="w-full h-48 object-cover" src="https://freshfrozenfood.net/wp-content/uploads/2022/12/Bonito-270x271.jpg" alt="Bonito">
+            <div class="p-4">
+                <h2 class="font-bold text-lg mb-2">Bonito</h2>
+                <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Buy Now</button>
+            </div>
+        </section>
+
+        <section class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img class="w-full h-48 object-cover" src="https://freshfrozenfood.net/wp-content/uploads/2022/12/Tilapia-270x271.jpg" alt="Tilapia">
+            <div class="p-4">
+                <h2 class="font-bold text-lg mb-2">Tilapia</h2>
+                <p class="text-gray-600 mb-4">High-quality frozen tilapia. Perfect for sushi and grilling.</p>
+                <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Buy Now</button>
+            </div>
+        </section>
+
+        <!-- Ajoutez d'autres sections de produits de la même manière -->
+    </main>
+    <footer class="bg-gray-800 text-white py-6 mt-10">
+        <div class="container mx-auto text-center">
+            <p class="mb-2">&copy; 2024 Fresh Frozen Food.</p>
+            <p class="mb-6">Importation & Distribution de Produits Alimentaires.</p>
+            <div class="flex justify-center space-x-4">
+                <img class="h-8" src="https://freshfrozenfood.net/wp-content/uploads/2022/11/clients-logo-fresh-frozen-food-1.png" alt="Bank 1">
+                <img class="h-8" src="https://freshfrozenfood.net/wp-content/uploads/2022/11/clients-logo-fresh-frozen-food-2.png" alt="Bank 2">
+                <img class="h-8" src="https://freshfrozenfood.net/wp-content/uploads/2022/11/clients-logo-fresh-frozen-food-3.png" alt="Bank 3">
+                <img class="h-8" src="https://freshfrozenfood.net/wp-content/uploads/2022/11/clients-logo-fresh-frozen-food-7.png" alt="Bank 4">
+                <img class="h-8" src="https://freshfrozenfood.net/wp-content/uploads/2022/11/clients-logo-fresh-frozen-food-14.png" alt="Bank 5">
+            </div>
+        </div>
+        <div class="mt-6">
+            <iframe 
+                class="w-full h-96" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.199589785392!2d2.526770010035678!3d6.368211293595332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103cab5ed5328b6f%3A0xf0ec2149b9ff39a6!2sFRESH%20FROZEN%20FOOD%20SA%20(Annexe%20PK10)!5e0!3m2!1sen!2sbj!4v1725635374015!5m2!1sen!2sbj" 
+                frameborder="0" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </footer>
+</body>
+
+</html>

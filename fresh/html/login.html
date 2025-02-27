@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Login or Create Account</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-lg p-8 max-w-sm w-full">
+        <img src="https://freshfrozenfood.net/wp-content/uploads/2022/11/logo-fresh-frozen-food.png" alt="Company Logo" class="mx-auto mb-4 h-16">
+        <h2 class="text-center text-2xl font-bold mb-6">Sign In</h2>
+        <form action="#" method="POST">
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700 font-medium mb-2">Username</label>
+                <input type="text" id="username" name="username" required class="border border-gray-300 rounded-lg w-full py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your username">
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-gray-700 font-medium mb-2">Password</label>
+                <input type="password" id="password" name="password" required class="border border-gray-300 rounded-lg w-full py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your password">
+            </div>
+            <div class="flex justify-between items-center mb-4">
+                <a href="#" class="text-blue-500 hover:underline">Forgot Password?</a>
+                <a href="login_2.html" class="text-blue-500 hover:underline"><strong>Create Account</strong></a>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-200">Login</button>
+        </form>
+    </div>
+</body>
+</html>
